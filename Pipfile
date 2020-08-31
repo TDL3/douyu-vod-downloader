@@ -4,6 +4,7 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 verify_ssl = true
 
 [dev-packages]
+auto-py-to-exe = "*"
 
 [packages]
 requests = "*"
