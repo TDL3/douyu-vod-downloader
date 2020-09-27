@@ -70,6 +70,5 @@ if __name__ == "__main__":
                         action='store', help='录播视频名字', default="mergedfile")
     parser.add_argument('url', type=str, help='斗鱼视频vod链接，任意一个即可')
     args = parser.parse_args()
-    print(args.file_name)
     DouYuVODDownloader(args.url, d_path=args.download_path,
                        fname=args.file_name).get()
