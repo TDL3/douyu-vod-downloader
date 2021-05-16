@@ -12,7 +12,7 @@ class DouYuVODDownloader():
         self.d_path = d_path
         self.fname = fname
         self.index = 0
-        self.ffmpeg = f"ffmpeg -f concat -safe 0 -i files.txt -c copy \"{self.fname}.mp4\""
+        self.ffmpeg = f"ffmpeg -f concat -safe 0 -i files.txt -c copy \"{self.fname}.mkv\""
 
     def makedir(self):
         if self.d_path == "./vods" and not os.path.isdir(self.d_path):
